@@ -1,38 +1,153 @@
-.App {
+/* Reset some default browser styles */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Define styles for the header */
+header {
+  background-color: #333;
+  color: white;
   text-align: center;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Center the main content */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px); /* Adjust based on your header height */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Define styles for links in the navigation */
+nav {
+  margin-top: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #555;
+}
+
+/* Style buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style list items */
+ul {
+  margin-top: 1rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+/* Style for form input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style for the success alert */
+.success-alert {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Style for the User List page */
+.user-list-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+/* Style for User List title */
+.user-list-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for Create User button */
+.create-user-button {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+/* Style for User List items */
+.user-list-item {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for User data fields */
+.user-data {
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for User data fields labels */
+.user-data label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style for action buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+}
+
+/* Style for action buttons */
+.action-buttons button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.action-buttons button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
